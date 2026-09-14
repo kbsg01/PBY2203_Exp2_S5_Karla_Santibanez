@@ -152,7 +152,7 @@ server:
 
 La estructura de carpetas refleja directamente la estrategia elegida en la sección 2.1: **cuatro proyectos Maven independientes**, agregados solo por comodidad de build bajo un `pom.xml` raíz (`packaging=pom`), pero deployables por separado:
 
-```
+```text
 banco-xyz-bff/
 ├── pom.xml                        (agregador, NO es el padre de Spring Boot de los módulos)
 ├── core-service/                  (backend generalizado — NUNCA expuesto a un frontend, HTTP plano)
